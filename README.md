@@ -1,4 +1,4 @@
-# Investigating Demographic Bias in Medical AI on Drusen Detection
+# Investigating Demographic Bias in Medical AI on Drusen Detection (MERE 2024)
 
 ## Research Overview
 
