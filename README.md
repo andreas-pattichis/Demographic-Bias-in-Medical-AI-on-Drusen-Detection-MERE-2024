@@ -2,7 +2,7 @@
 
 ## Research Overview
 
-This repository contains research investigating demographic biases in OpenAI's GPT-4 model when detecting Drusen in fundus images. Drusen are yellow deposits beneath the retina that are a key marker for age-related macular degeneration (AMD). The study analyzes how the model's performance varies across different demographic groups, specifically focusing on:
+This repository contains research investigating demographic biases in OpenAI's GPT-4o model when detecting Drusen in fundus images. Drusen are yellow deposits beneath the retina that are a key marker for age-related macular degeneration (AMD). The study analyzes how the model's performance varies across different demographic groups, specifically focusing on:
 
 1. **Age-related bias**: Comparing performance across young (<30), middle-aged (30-60), and older (>60) adults
 2. **Sex-related bias**: Evaluating performance differences between male and female patients
@@ -19,7 +19,7 @@ This repository contains research investigating demographic biases in OpenAI's G
   - Female patients also had higher false positive rates (47.37% vs. 30.00%)
   - Model showed higher selection rates for females (66% vs. 44% for males)
 
-- **Overall performance**: While GPT-4 showed reasonable diagnostic capability (accuracy ranging from 60-68%), the observed biases could lead to disparities in healthcare outcomes if not addressed.
+- **Overall performance**: While GPT-4o showed reasonable diagnostic capability (accuracy ranging from 60-68%), the observed biases could lead to disparities in healthcare outcomes if not addressed.
 
 ## Dataset
 
@@ -51,7 +51,7 @@ The observed biases have significant implications:
 Key limitations of this study include:
 
 - **Sample size**: Limited to 50 images per demographic group due to financial constraints
-- **Model selection**: GPT-4 is not specifically trained for medical image analysis
+- **Model selection**: GPT-4o is not specifically trained/fine-tuned for medical image analysis
 - **Dataset bias**: The BRSET dataset may contain inherent biases related to the Brazilian population
 - **Single condition focus**: Analysis focused only on Drusen detection
 
@@ -70,11 +70,11 @@ This research underscores the critical importance of evaluating AI systems for d
 ## Technical Implementation
 
 The study used:
-- OpenAI's GPT-4 API for image classification
+- OpenAI's GPT-4o API for image classification
 - Standardized prompts to ensure consistency
 - Python data analysis libraries for metric calculation and statistical analysis
 - Stratified sampling techniques to ensure balanced representation
 
 ## Conclusion
 
-This research reveals important demographic biases in GPT-4's drusen detection capabilities that favor older adults and female patients. These findings highlight the need for comprehensive bias testing and mitigation strategies before deploying AI systems in clinical settings. Ensuring equitable performance across all demographic groups is essential to realizing AI's potential for improving healthcare outcomes.
+This research reveals important demographic biases in GPT-4o's detection capabilities for medical imaging that favor older adults and female patients. These findings highlight the need for comprehensive bias testing and mitigation strategies before deploying AI systems in clinical settings. Ensuring equitable performance across all demographic groups is essential to realizing AI's potential for improving healthcare outcomes.
